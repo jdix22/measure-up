@@ -235,7 +235,7 @@
 
   /* Transformations */
   .work { background: var(--coal); }
-  .tabs { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; margin-bottom: 34px; }
+  .tabs { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 34px; }
   .tab {
     position: relative; display: flex; flex-direction: column; text-align: left; gap: 10px; padding: 0 0 12px; cursor: pointer;
     background: none; border: 0; color: var(--mute); transition: color .25s;
@@ -423,7 +423,7 @@
   @media (max-width: 1100px) {
     .nav { gap: 24px; }
     .hdr-phone { display: none; }
-    .tabs { grid-template-columns: repeat(3, 1fr); }
+    .tabs { grid-template-columns: repeat(5, 1fr); }
     .showcase { grid-template-columns: 1fr; }
     .stage { --stage-h: clamp(420px, 70vh, 640px); }
     .svc-grid { grid-template-columns: 1fr 1fr; }
@@ -566,7 +566,7 @@
         </div>
 
         <div class="proj rv d1" id="proj" aria-live="polite">
-          <div class="num" id="pNum">01<span>/ 06</span></div>
+          <div class="num" id="pNum">01<span>/ 05</span></div>
           <h3 id="pTitle"></h3>
           <div class="loc" id="pLoc"></div>
           <p class="desc" id="pDesc"></p>
@@ -705,7 +705,7 @@
         <figure class="rv" tabindex="0"><img src="assets/img/mudroom-after.jpg" alt="Built-in mudroom with Shaker panels, coat hooks, a stained bench and shoe cubbies" loading="lazy" width="1080" height="1350"><figcaption>Closet to mudroom</figcaption></figure>
         <figure class="rv d1" tabindex="0"><img src="assets/img/deck-firepit.jpg" alt="Deck seating around a fire table with dining set and new privacy fence" loading="lazy" width="1400" height="1219"><figcaption>Fire table zone</figcaption></figure>
         <figure class="rv d2" tabindex="0"><img src="assets/img/foyer-entry.jpg" alt="View through the front door to new tile, oak flooring and white closet" loading="lazy" width="900" height="1738"><figcaption>Entry &amp; flooring</figcaption></figure>
-        <figure class="rv" tabindex="0"><img src="assets/img/gate2-after.jpg" alt="Framed cedar double gate with black strap hinges" loading="lazy" width="960" height="1363"><figcaption>Garden gate</figcaption></figure>
+        <figure class="rv" tabindex="0"><img src="assets/img/gate2-after.jpg" alt="Yard side of the rebuilt side gate: cross-braced cedar panels on black strap hinges" loading="lazy" width="960" height="1363"><figcaption>Side gate, yard side</figcaption></figure>
         <figure class="rv d1" tabindex="0"><img src="assets/img/bath-after.jpg" alt="Finished bathroom with floating vanity and large-format tile" loading="lazy" width="1080" height="1350"><figcaption>Bathroom upgrade</figcaption></figure>
       </div>
     </div>
@@ -906,15 +906,10 @@
       scope: ['Multi-level deck', 'Wraparound steps', 'Railings', 'Privacy fence', 'Lighting', 'Stone path'],
       altB: 'Before: bare dirt backyard with deck footings and an old fence', altA: 'After: finished deck with dining set, lounge seating and a new privacy fence' },
     { key: 'gate', ar: 900 / 1385, title: 'Side Gate Rebuild', short: 'Side gate', loc: 'Greater Toronto Area · 2023',
-      desc: 'Weathered grey gates with sagging lattice tops were replaced with solid, square framed double gates: tight vertical boards, a clean header and new black hardware.',
+      desc: 'Weathered grey gates with sagging lattice tops were replaced with solid, square framed double gates: tight vertical boards and a clean header on the street side, cross-braced panels on heavy-duty black strap hinges on the yard side.',
       quote: 'Unlocking backyard beauty, one gate redesign at a time.',
-      scope: ['Framed double gates', 'New hardware', 'Header & trim', 'Removal & disposal'],
-      altB: 'Before: weathered grey wood gates with lattice tops', altA: 'After: new framed wood double gates with black handle' },
-    { key: 'gate2', ar: 960 / 1363, title: 'Garden Gate Redesign', short: 'Garden gate', loc: 'Greater Toronto Area · 2023',
-      desc: 'Another tired lattice-top gate brought back to life. New cross-braced framed panels on heavy-duty black strap hinges, built to hang straight and swing smoothly for years.',
-      quote: '',
-      scope: ['Framed gate panels', 'Strap hinges', 'Latch hardware', 'Header beam'],
-      altB: 'Before: grey weathered gate with lattice top beside a shrub', altA: 'After: new cedar-tone framed double gate with black strap hinges' }
+      scope: ['Framed double gates', 'Strap hinges & hardware', 'Header & trim', 'Removal & disposal'],
+      altB: 'Before: weathered grey wood gates with lattice tops', altA: 'After: new framed wood double gates with black handle' }
   ];
   projects.forEach(function (p) {
     // Warm the cache so switching projects is instant

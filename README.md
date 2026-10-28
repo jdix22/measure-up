@@ -5,7 +5,7 @@ A one-page website for Measure Up Contracting Inc., an owner-led residential ren
 Live: https://sambass.ca/ (Cloudflare Worker "measure-up", also mirrored at https://jdix22.github.io/measure-up/)
 
 ## Highlights
-- **Before/after sliders** built from the company's own Instagram photos: one in the hero that wipes across on load, and a showcase of six projects (bathroom, mudroom, foyer, deck, two gates). Drag with a mouse, swipe on a phone or use the arrow keys.
+- **Before/after sliders** built from the company's own Instagram photos: one in the hero that wipes across on load, and a showcase of five projects (bathroom, mudroom, foyer, deck, side gate). Drag with a mouse, swipe on a phone or use the arrow keys.
 - Black-and-gold look taken from the logo, with a tape-measure motif
 - Services, process, about the owner, photo gallery with a full-size viewer, FAQ and an estimate form
 - The estimate form needs no server: it opens the visitor's email app with their details filled in, addressed to measureupcontractinginc@yahoo.com
