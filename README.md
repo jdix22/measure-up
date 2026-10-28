@@ -2,7 +2,7 @@
 
 A one-page website for Measure Up Contracting Inc., an owner-led residential renovation company serving the Greater Toronto Area. It's plain HTML, CSS and JavaScript with no build step, so it runs on GitHub Pages as-is.
 
-Live: https://jdix22.github.io/measure-up/
+Live: https://sambass.ca/ (Cloudflare Worker "measure-up", also mirrored at https://jdix22.github.io/measure-up/)
 
 ## Highlights
 - **Before/after sliders** built from the company's own Instagram photos: one in the hero that wipes across on load, and a showcase of six projects (bathroom, mudroom, foyer, deck, two gates). Drag with a mouse, swipe on a phone or use the arrow keys.
@@ -21,3 +21,6 @@ Live: https://jdix22.github.io/measure-up/
 - **Phone / email:** search `index.html` for `6472131448`, `213-1448` and `measureupcontractinginc@yahoo.com`, and update the JSON-LD block in `<head>`.
 - **Colours:** change the CSS variables at the top of `<style>` (`--gold` is the accent).
 - **Form to inbox instead of email app:** point the form at a service like Formspree (`<form action="https://formspree.io/f/XXXX" method="POST">`) and remove the `mailto` handler in the script.
+
+## Deploying
+sambass.ca runs as a Cloudflare Worker serving this folder as static assets (`wrangler.jsonc`; `.assetsignore` keeps the README and config private). After changing anything, run `npx wrangler deploy` from this folder. Pushing to GitHub only updates the github.io copy.
